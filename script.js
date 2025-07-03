@@ -590,78 +590,56 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ========== OPENAI CHAT DEMO (NOT FOR PRODUCTION) ========== //
-    async function askOpenAI(prompt) {
-        const apiKey = 'YOUR_OPENAI_API_KEY_HERE';
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + apiKey
-            },
-            body: JSON.stringify({
-                model: 'gpt-3.5-turbo',
-                messages: [{ role: 'user', content: prompt }]
-            })
-        });
-        const data = await response.json();
-        return data.choices?.[0]?.message?.content || 'No response';
-    }
+    // ========== AI Pengkali No. Plet Kereta Bertuah (Gemini Free/Local) ========== //
 
-    // OpenAI Chat Demo
-    const askBtn = document.getElementById('askBtn');
-    if (askBtn) {
-        askBtn.addEventListener('click', async function() {
-            const prompt = document.getElementById('openaiPrompt').value;
-            const resultDiv = document.getElementById('openaiResult');
-            resultDiv.textContent = 'Loading...';
-            try {
-                const result = await askOpenAI(prompt);
-                resultDiv.textContent = result;
-            } catch (err) {
-                resultDiv.textContent = 'Error: ' + err;
+    document.addEventListener('DOMContentLoaded', function() {
+        const plateForm = document.getElementById('plateForm');
+        const plateResult = document.getElementById('plateResult');
+
+        // Utility: Generate a random 4-digit number as string, avoiding '4', prefer '8'
+        function generateLuckyNumber() {
+            let num = '';
+            while (num.length < 4) {
+                let digit = Math.floor(Math.random() * 10);
+                // Avoid 4, prefer 8
+                if (digit === 4) continue;
+                if (Math.random() < 0.25) digit = 8; // 25% chance to be 8
+                num += digit;
             }
-        });
-    }
-
-    // ========== AI Pengkali No. Plet Kereta Bertuah ========== //
-
-    const plateForm = document.getElementById('plateForm');
-    const plateResult = document.getElementById('plateResult');
-
-    // MASUKKAN API KEY ANDA DI SINI SECARA MANUAL (JANGAN PUSH KE GITHUB)
-    const apiKey = 'YOUR_OPENAI_API_KEY_HERE'; // <-- Gantikan dengan key anda di local
-
-    async function getLuckyPlateAdvice(birthdate) {
-        const prompt = `Saya lahir pada ${birthdate}. Berdasarkan ramalan Cina, apakah nombor plet kereta yang bertuah dan nasihat untuk saya? Sila beri jawapan dalam Bahasa Melayu, ringkas, dan mesra.`;
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + apiKey
-            },
-            body: JSON.stringify({
-                model: 'gpt-3.5-turbo',
-                messages: [{ role: 'user', content: prompt }]
-            })
-        });
-        const data = await response.json();
-        return data.choices?.[0]?.message?.content || 'Tiada jawapan.';
-    }
-
-    plateForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const birthdate = document.getElementById('birthdate').value;
-        if (!birthdate) {
-            plateResult.textContent = 'Sila masukkan tarikh lahir.';
-            return;
+            return num;
         }
-        plateResult.textContent = 'Meminta nasihat AI...';
-        try {
-            const advice = await getLuckyPlateAdvice(birthdate);
-            plateResult.textContent = advice;
-        } catch (err) {
-            plateResult.textContent = 'Ralat: ' + err;
+
+        // Generate 10 unique lucky numbers
+        function getLuckyNumbers(birthdate) {
+            const luckyNumbers = new Set();
+            // Use birthdate to seed (simple: sum of digits)
+            let seed = birthdate.replace(/-/g, '').split('').reduce((a, b) => a + parseInt(b), 0);
+            while (luckyNumbers.size < 10) {
+                // Use seed to influence randomness
+                let base = (Math.floor(Math.random() * 9000) + 1000 + seed) % 10000;
+                let numStr = base.toString().padStart(4, '0');
+                // Avoid 4, prefer 8
+                if (numStr.includes('4')) continue;
+                if (!numStr.includes('8')) {
+                    // Try to add 8 if possible
+                    let arr = numStr.split('');
+                    arr[Math.floor(Math.random() * 4)] = '8';
+                    numStr = arr.join('');
+                }
+                luckyNumbers.add(numStr);
+            }
+            return Array.from(luckyNumbers);
         }
+
+        plateForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const birthdate = document.getElementById('birthdate').value;
+            if (!birthdate) {
+                plateResult.textContent = 'Sila masukkan tarikh lahir.';
+                return;
+            }
+            const luckyList = getLuckyNumbers(birthdate);
+            plateResult.innerHTML = `<b>10 Nombor Plat Bertuah (4 angka):</b><br><ul style='margin-top:1rem;text-align:left;'>${luckyList.map(n => `<li><b>${n}</b></li>`).join('')}</ul><div style='margin-top:1rem;font-size:0.95em;color:#888;'>* Elakkan angka 4, banyakkan angka 8 untuk lebih tuah menurut kepercayaan Cina.</div>`;
+        });
     });
 }); 
