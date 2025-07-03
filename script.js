@@ -590,7 +590,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ========== AI Pengkali No. Plet Kereta Bertuah (Gemini Free/Local) ========== //
+    // ========== AI Pengkali No. Plet Kereta Bertuah (Local Only, No API) ========== //
 
     document.addEventListener('DOMContentLoaded', function() {
         const plateForm = document.getElementById('plateForm');
