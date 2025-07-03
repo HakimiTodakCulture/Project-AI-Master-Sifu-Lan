@@ -3,22 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Pengkali No. Plet Kereta Bertuah</title>
+    <title>Hakimi - Ergonomic Office Solutions Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="ai-plate-main">
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <!-- Geometric Background -->
+    <div class="geometric-bg">
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+    </div>
+    
+    <!-- Interactive Cursor -->
+    <div class="interactive-cursor"></div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header>
         <div class="container">
-            <h1>AI Pengkali No. Plet Kereta Bertuah</h1>
-            <p>Masukkan tarikh lahir anda untuk dapatkan nasihat nombor plet kereta yang sesuai menurut ramalan Cina.</p>
-            <form id="plateForm" class="ai-plate-form">
-                <label for="birthdate">Tarikh Lahir:</label>
-                <input type="date" id="birthdate" name="birthdate" required />
-                <button type="submit" class="btn btn-primary">Dapatkan Nombor Plet Bertuah</button>
-            </form>
-            <div id="plateResult" class="ai-plate-result"></div>
+            <div class="header-content">
+                <div class="logo">Hakimi</div>
+                <nav>
+                                    <ul class="nav-links">
+                    <li><a href="#home" data-lang="home">Home</a></li>
+                    <li><a href="#services" data-lang="services">Services</a></li>
+                    <li><a href="#festivals" data-lang="festivals">Festivals</a></li>
+                    <li><a href="#contact" data-lang="contact">Contact</a></li>
+                </ul>
+                </nav>
+                <div class="header-controls">
+                    <div class="theme-toggle" id="themeToggle">
+                        <svg class="sun-icon" viewBox="0 0 24 24">
+                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" style="display: none;">
+                            <path d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"/>
+                        </svg>
+                    </div>
+                    <div class="language-selector" id="languageSelector">
+                        <div class="language-option active" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-text">EN</span>
+                        </div>
+                        <div class="language-option" data-lang="ms">
+                            <span class="lang-flag">🇲🇾</span>
+                            <span class="lang-text">BM</span>
+                        </div>
+                        <div class="language-option" data-lang="ru">
+                            <span class="lang-flag">🇷🇺</span>
+                            <span class="lang-text">RU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="loading loading-delay-1" data-lang="hero-title">Transform Your Workspace with Premium Ergonomic Solutions</h1>
+                    <p class="tagline loading loading-delay-2" data-lang="hero-tagline">Expert in ergonomic office chairs that enhance productivity and well-being</p>
+                    <p class="description loading loading-delay-3" data-lang="hero-description">I'm Hakimi, a passionate sales professional specializing in ergonomic office solutions. With years of experience in selling premium office furniture, I help businesses and individuals create comfortable, productive workspaces that prioritize health and efficiency.</p>
+                    <div class="cta-buttons loading loading-delay-4">
+                        <a href="#contact" class="btn btn-primary" data-lang="cta-primary">Get Free Consultation</a>
+                        <a href="#services" class="btn btn-secondary" data-lang="cta-secondary">View Solutions</a>
+                    </div>
+                </div>
+                <div class="hero-visual loading loading-delay-2">
+                    <div class="chair-illustration">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ergonomic Office Chair" class="chair-image">
+                        <div class="floating-elements">
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label" data-lang="stats-clients">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label" data-lang="stats-chairs">Chairs Sold</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label" data-lang="stats-satisfaction">Satisfaction Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label" data-lang="stats-experience">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="services-title">What I Offer</h2>
+                <p class="section-subtitle" data-lang="services-subtitle">Comprehensive ergonomic solutions tailored to your specific needs and workspace requirements</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🪑</div>
+                    <h3 class="service-title" data-lang="service-1-title">Premium Ergonomic Chairs</h3>
+                    <p class="service-description" data-lang="service-1-desc">High-quality office chairs designed for maximum comfort and support, reducing back pain and improving posture during long work hours.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title" data-lang="service-2-title">Workspace Assessment</h3>
+                    <p class="service-description" data-lang="service-2-desc">Professional evaluation of your workspace to recommend the perfect ergonomic solutions that fit your budget and requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title" data-lang="service-3-title">Custom Solutions</h3>
+                    <p class="service-description" data-lang="service-3-desc">Tailored ergonomic packages for businesses of all sizes, from startups to large corporations, ensuring optimal workplace comfort.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3 class="service-title" data-lang="service-4-title">After-Sales Support</h3>
+                    <p class="service-description" data-lang="service-4-desc">Ongoing support and maintenance services to ensure your ergonomic investments continue to perform at their best.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3 class="service-title" data-lang="service-5-title">Flexible Financing</h3>
+                    <p class="service-description" data-lang="service-5-desc">Competitive pricing and flexible payment options to make premium ergonomic solutions accessible to every business.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3 class="service-title" data-lang="service-6-title">Installation & Setup</h3>
+                    <p class="service-description" data-lang="service-6-desc">Professional installation and setup services to ensure your ergonomic furniture is properly configured for maximum benefit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="products-title">Featured Ergonomic Solutions</h2>
+                <p class="section-subtitle" data-lang="products-subtitle">Premium office chairs designed for maximum comfort and productivity</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Executive Ergonomic Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-1-name">Executive Ergonomic Chair</h3>
+                        <p class="product-description" data-lang="product-1-desc">Premium leather executive chair with advanced lumbar support and adjustable features for ultimate comfort.</p>
+                        <div class="product-price">RM 2,499</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mesh Back Office Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-2-name">Mesh Back Office Chair</h3>
+                        <p class="product-description" data-lang="product-2-desc">Breathable mesh back chair with ergonomic design, perfect for long working hours and hot climates.</p>
+                        <div class="product-price">RM 1,899</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gaming Ergonomic Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-3-name">Gaming Ergonomic Chair</h3>
+                        <p class="product-description" data-lang="product-3-desc">High-performance gaming chair with memory foam padding and adjustable armrests for extended comfort.</p>
+                        <div class="product-price">RM 1,599</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Standing Desk Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-4-name">Standing Desk Chair</h3>
+                        <p class="product-description" data-lang="product-4-desc">Innovative stool designed for standing desks, promoting active sitting and better posture.</p>
+                        <div class="product-price">RM 899</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Conference Room Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-5-name">Conference Room Chair</h3>
+                        <p class="product-description" data-lang="product-5-desc">Elegant conference chair with premium upholstery and ergonomic design for professional meetings.</p>
+                        <div class="product-price">RM 1,299</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Home Office Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-6-name">Home Office Chair</h3>
+                        <p class="product-description" data-lang="product-6-desc">Comfortable and stylish chair perfect for home offices, blending ergonomics with modern design.</p>
+                        <div class="product-price">RM 1,199</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Malaysian Festivals Section -->
+    <section id="festivals" class="festivals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="festivals-title">Cuti Perayaan Sepanjang Tahun 2025</h2>
+                <p class="section-subtitle" data-lang="festivals-subtitle">Meraikan kepelbagaian budaya dan keharmonian antara kaum di Malaysia</p>
+            </div>
+            
+            <div class="festivals-timeline">
+                <!-- January -->
+                <div class="month-section">
+                    <h3 class="month-title">Januari 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">15 Jan</div>
+                            <div class="festival-icon">🌾</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html> 
