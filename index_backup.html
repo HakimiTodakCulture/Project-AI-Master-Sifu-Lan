@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakimi - Ergonomic Office Solutions Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <!-- Geometric Background -->
+    <div class="geometric-bg">
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+    </div>
+    
+    <!-- Interactive Cursor -->
+    <div class="interactive-cursor"></div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hakimi</div>
+                <nav>
+                                    <ul class="nav-links">
+                    <li><a href="#home" data-lang="home">Home</a></li>
+                    <li><a href="#services" data-lang="services">Services</a></li>
+                    <li><a href="#festivals" data-lang="festivals">Festivals</a></li>
+                    <li><a href="#contact" data-lang="contact">Contact</a></li>
+                </ul>
+                </nav>
+                <div class="header-controls">
+                    <div class="theme-toggle" id="themeToggle">
+                        <svg class="sun-icon" viewBox="0 0 24 24">
+                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" style="display: none;">
+                            <path d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"/>
+                        </svg>
+                    </div>
+                    <div class="language-selector" id="languageSelector">
+                        <div class="language-option active" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-text">EN</span>
+                        </div>
+                        <div class="language-option" data-lang="ms">
+                            <span class="lang-flag">🇲🇾</span>
+                            <span class="lang-text">BM</span>
+                        </div>
+                        <div class="language-option" data-lang="ru">
+                            <span class="lang-flag">🇷🇺</span>
+                            <span class="lang-text">RU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="loading loading-delay-1" data-lang="hero-title">Transform Your Workspace with Premium Ergonomic Solutions</h1>
+                    <p class="tagline loading loading-delay-2" data-lang="hero-tagline">Expert in ergonomic office chairs that enhance productivity and well-being</p>
+                    <p class="description loading loading-delay-3" data-lang="hero-description">I'm Hakimi, a passionate sales professional specializing in ergonomic office solutions. With years of experience in selling premium office furniture, I help businesses and individuals create comfortable, productive workspaces that prioritize health and efficiency.</p>
+                    <div class="cta-buttons loading loading-delay-4">
+                        <a href="#contact" class="btn btn-primary" data-lang="cta-primary">Get Free Consultation</a>
+                        <a href="#services" class="btn btn-secondary" data-lang="cta-secondary">View Solutions</a>
+                    </div>
+                </div>
+                <div class="hero-visual loading loading-delay-2">
+                    <div class="chair-illustration">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ergonomic Office Chair" class="chair-image">
+                        <div class="floating-elements">
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label" data-lang="stats-clients">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label" data-lang="stats-chairs">Chairs Sold</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label" data-lang="stats-satisfaction">Satisfaction Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label" data-lang="stats-experience">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="services-title">What I Offer</h2>
+                <p class="section-subtitle" data-lang="services-subtitle">Comprehensive ergonomic solutions tailored to your specific needs and workspace requirements</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🪑</div>
+                    <h3 class="service-title" data-lang="service-1-title">Premium Ergonomic Chairs</h3>
+                    <p class="service-description" data-lang="service-1-desc">High-quality office chairs designed for maximum comfort and support, reducing back pain and improving posture during long work hours.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title" data-lang="service-2-title">Workspace Assessment</h3>
+                    <p class="service-description" data-lang="service-2-desc">Professional evaluation of your workspace to recommend the perfect ergonomic solutions that fit your budget and requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title" data-lang="service-3-title">Custom Solutions</h3>
+                    <p class="service-description" data-lang="service-3-desc">Tailored ergonomic packages for businesses of all sizes, from startups to large corporations, ensuring optimal workplace comfort.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3 class="service-title" data-lang="service-4-title">After-Sales Support</h3>
+                    <p class="service-description" data-lang="service-4-desc">Ongoing support and maintenance services to ensure your ergonomic investments continue to perform at their best.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3 class="service-title" data-lang="service-5-title">Flexible Financing</h3>
+                    <p class="service-description" data-lang="service-5-desc">Competitive pricing and flexible payment options to make premium ergonomic solutions accessible to every business.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3 class="service-title" data-lang="service-6-title">Installation & Setup</h3>
+                    <p class="service-description" data-lang="service-6-desc">Professional installation and setup services to ensure your ergonomic furniture is properly configured for maximum benefit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="products-title">Featured Ergonomic Solutions</h2>
+                <p class="section-subtitle" data-lang="products-subtitle">Premium office chairs designed for maximum comfort and productivity</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Executive Ergonomic Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-1-name">Executive Ergonomic Chair</h3>
+                        <p class="product-description" data-lang="product-1-desc">Premium leather executive chair with advanced lumbar support and adjustable features for ultimate comfort.</p>
+                        <div class="product-price">RM 2,499</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mesh Back Office Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-2-name">Mesh Back Office Chair</h3>
+                        <p class="product-description" data-lang="product-2-desc">Breathable mesh back chair with ergonomic design, perfect for long working hours and hot climates.</p>
+                        <div class="product-price">RM 1,899</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gaming Ergonomic Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-3-name">Gaming Ergonomic Chair</h3>
+                        <p class="product-description" data-lang="product-3-desc">High-performance gaming chair with memory foam padding and adjustable armrests for extended comfort.</p>
+                        <div class="product-price">RM 1,599</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Standing Desk Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-4-name">Standing Desk Chair</h3>
+                        <p class="product-description" data-lang="product-4-desc">Innovative stool designed for standing desks, promoting active sitting and better posture.</p>
+                        <div class="product-price">RM 899</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Conference Room Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-5-name">Conference Room Chair</h3>
+                        <p class="product-description" data-lang="product-5-desc">Elegant conference chair with premium upholstery and ergonomic design for professional meetings.</p>
+                        <div class="product-price">RM 1,299</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Home Office Chair" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name" data-lang="product-6-name">Home Office Chair</h3>
+                        <p class="product-description" data-lang="product-6-desc">Comfortable and stylish chair perfect for home offices, blending ergonomics with modern design.</p>
+                        <div class="product-price">RM 1,199</div>
+                        <a href="#contact" class="btn btn-primary" data-lang="inquire-now">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Malaysian Festivals Section -->
+    <section id="festivals" class="festivals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="festivals-title">Cuti Perayaan Sepanjang Tahun 2025</h2>
+                <p class="section-subtitle" data-lang="festivals-subtitle">Meraikan kepelbagaian budaya dan keharmonian antara kaum di Malaysia</p>
+            </div>
+            
+            <div class="festivals-timeline">
+                <!-- January -->
+                <div class="month-section">
+                    <h3 class="month-title">Januari 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">15 Jan</div>
+                            <div class="festival-icon">🌾</div>
+                            <h4 class="festival-name">Thai Pongal</h4>
+                            <p class="festival-ethnic">Masyarakat India</p>
+                            <p class="festival-desc">Perayaan menuai padi dan kesyukuran kepada Dewa Surya</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Pongal</span>
+                                <span class="food-tag">Murukku</span>
+                                <span class="food-tag">Vadai</span>
+                            </div>
+                        </div>
+                        
+                        <div class="festival-card">
+                            <div class="festival-date">29-30 Jan</div>
+                            <div class="festival-icon">🐉</div>
+                            <h4 class="festival-name">Tahun Baru Cina</h4>
+                            <p class="festival-ethnic">Masyarakat Cina</p>
+                            <p class="festival-desc">Tahun Kayu Naga - Permulaan baru dan perayaan keluarga</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Yee Sang</span>
+                                <span class="food-tag">Kuih Bakul</span>
+                                <span class="food-tag">Kuih Kapit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- February -->
+                <div class="month-section">
+                    <h3 class="month-title">Februari 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">11 Feb</div>
+                            <div class="festival-icon">🙏</div>
+                            <h4 class="festival-name">Thaipusam</h4>
+                            <p class="festival-ethnic">Masyarakat India</p>
+                            <p class="festival-desc">Perayaan pengorbanan dan kesabaran di gua Batu</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Makanan Vegetarian</span>
+                                <span class="food-tag">Susu</span>
+                                <span class="food-tag">Kurma</span>
+                            </div>
+                        </div>
+                        
+                        <div class="festival-card">
+                            <div class="festival-date">12 Feb</div>
+                            <div class="festival-icon">🏮</div>
+                            <h4 class="festival-name">Chap Goh Mei</h4>
+                            <p class="festival-ethnic">Masyarakat Cina</p>
+                            <p class="festival-desc">Penutupan Tahun Baru Cina dengan perayaan tanglung</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Tangyuan</span>
+                                <span class="food-tag">Kuih Bulan</span>
+                                <span class="food-tag">Kuih Bakul</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- March -->
+                <div class="month-section">
+                    <h3 class="month-title">Mac 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">14 Mac</div>
+                            <div class="festival-icon">🎨</div>
+                            <h4 class="festival-name">Hari Hol</h4>
+                            <p class="festival-ethnic">Masyarakat India</p>
+                            <p class="festival-desc">Perayaan warna dan persahabatan</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Gujiya</span>
+                                <span class="food-tag">Thandai</span>
+                                <span class="food-tag">Puran Poli</span>
+                            </div>
+                        </div>
+                        
+                        <div class="festival-card">
+                            <div class="festival-date">1-30 Mac</div>
+                            <div class="festival-icon">🌙</div>
+                            <h4 class="festival-name">Bulan Ramadan</h4>
+                            <p class="festival-ethnic">Masyarakat Melayu</p>
+                            <p class="festival-desc">Bulan suci untuk berpuasa dan beribadat</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Kurma</span>
+                                <span class="food-tag">Bubur Lambuk</span>
+                                <span class="food-tag">Kuih Raya</span>
+                            </div>
+                        </div>
+                        
+                        <div class="festival-card">
+                            <div class="festival-date">31 Mac</div>
+                            <div class="festival-icon">🕌</div>
+                            <h4 class="festival-name">Hari Raya Aidilfitri</h4>
+                            <p class="festival-ethnic">Masyarakat Melayu</p>
+                            <p class="festival-desc">Perayaan kemenangan setelah berpuasa</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Ketupat</span>
+                                <span class="food-tag">Lemang</span>
+                                <span class="food-tag">Rendang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- May -->
+                <div class="month-section">
+                    <h3 class="month-title">Mei 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">13 Mei</div>
+                            <div class="festival-icon">🕉️</div>
+                            <h4 class="festival-name">Hari Wesak</h4>
+                            <p class="festival-ethnic">Masyarakat Buddha</p>
+                            <p class="festival-desc">Perayaan kelahiran, pencerahan, dan kematian Buddha</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Makanan Vegetarian</span>
+                                <span class="food-tag">Teh Herba</span>
+                                <span class="food-tag">Buah-buahan</span>
+                            </div>
+                        </div>
+                        
+                        <div class="festival-card">
+                            <div class="festival-date">30-31 Mei</div>
+                            <div class="festival-icon">🌾</div>
+                            <h4 class="festival-name">Pesta Kaamatan</h4>
+                            <p class="festival-ethnic">Masyarakat Kadazan-Dusun</p>
+                            <p class="festival-desc">Perayaan menuai padi di Sabah</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Hinava</span>
+                                <span class="food-tag">Tuhau</span>
+                                <span class="food-tag">Lihing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- June -->
+                <div class="month-section">
+                    <h3 class="month-title">Jun 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">1 Jun</div>
+                            <div class="festival-icon">🏹</div>
+                            <h4 class="festival-name">Gawai Dayak</h4>
+                            <p class="festival-ethnic">Masyarakat Dayak</p>
+                            <p class="festival-desc">Perayaan menuai padi di Sarawak</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Pansoh</span>
+                                <span class="food-tag">Laksa Sarawak</span>
+                                <span class="food-tag">Tuak</span>
+                            </div>
+                        </div>
+                        
+                        <div class="festival-card">
+                            <div class="festival-date">28 Jun</div>
+                            <div class="festival-icon">🕌</div>
+                            <h4 class="festival-name">Hari Raya Haji</h4>
+                            <p class="festival-ethnic">Masyarakat Melayu</p>
+                            <p class="festival-desc">Perayaan korban dan pengorbanan</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Daging Korban</span>
+                                <span class="food-tag">Rendang</span>
+                                <span class="food-tag">Satay</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- October -->
+                <div class="month-section">
+                    <h3 class="month-title">Oktober 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">21 Okt</div>
+                            <div class="festival-icon">🪔</div>
+                            <h4 class="festival-name">Deepavali</h4>
+                            <p class="festival-ethnic">Masyarakat India</p>
+                            <p class="festival-desc">Perayaan cahaya dan kemenangan kebaikan</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Murukku</span>
+                                <span class="food-tag">Laddu</span>
+                                <span class="food-tag">Gulab Jamun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- December -->
+                <div class="month-section">
+                    <h3 class="month-title">Disember 2025</h3>
+                    <div class="festival-cards">
+                        <div class="festival-card">
+                            <div class="festival-date">25 Dis</div>
+                            <div class="festival-icon">🎄</div>
+                            <h4 class="festival-name">Hari Krismas</h4>
+                            <p class="festival-ethnic">Semua Kaum</p>
+                            <p class="festival-desc">Perayaan kelahiran Jesus Christ</p>
+                            <div class="festival-foods">
+                                <span class="food-tag">Ayam Panggang</span>
+                                <span class="food-tag">Kek Krismas</span>
+                                <span class="food-tag">Biskut Krismas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="festivals-note">
+                <p><strong>Nota:</strong> Tarikh perayaan mungkin berbeza 1-2 hari bergantung kepada pencerapan bulan. Setiap perayaan mencerminkan keharmonian dan toleransi antara kaum di Malaysia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-lang="contact-title">Ready to Transform Your Workspace?</h3>
+                    <p data-lang="contact-description">Let's discuss how ergonomic solutions can improve your productivity and well-being. I'm here to help you find the perfect fit for your needs and budget.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4 data-lang="contact-call">Call Me</h4>
+                                <p>+60 12-345 6789</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4 data-lang="contact-email">Email</h4>
+                                <p>hakimi@ergonomicsolutions.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4 data-lang="contact-location">Location</h4>
+                                <p>Kuala Lumpur, Malaysia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" data-lang="form-name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-lang="form-email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" data-lang="form-company">Company (Optional)</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-lang="form-message">Message</label>
+                            <textarea id="message" name="message" data-lang="form-placeholder" placeholder="Tell me about your ergonomic needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-lang="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Hakimi</div>
+                <ul class="footer-links">
+                    <li><a href="#home" data-lang="home">Home</a></li>
+                    <li><a href="#services" data-lang="services">Services</a></li>
+                    <li><a href="#festivals" data-lang="festivals">Festivals</a></li>
+                    <li><a href="#contact" data-lang="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hakimi Ergonomic Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
